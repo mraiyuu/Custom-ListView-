@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/image"
+        android:src="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textName"
+        android:layout_toRightOf="@id/image"
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        style = "@style/TextAppearance.AppCompat.Title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescription"
+        android:layout_below="@id/textName"
+        android:layout_toRightOf="@id/image"
+        android:layout_marginLeft="20dp"
+        android:text="Description"
+        style = "@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:maxLength="50"
+        android:singleLine="true"/>
+
+
+
+
+</RelativeLayout>
